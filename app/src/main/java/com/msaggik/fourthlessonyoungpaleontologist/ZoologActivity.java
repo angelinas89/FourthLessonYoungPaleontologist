@@ -9,19 +9,19 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MesozoicActivity extends AppCompatActivity {
+public class ZoologActivity extends AppCompatActivity {
 
     // задание полей
     private ListView mesozoicList; // поле вывода информации на экран
     private TextView mesozoicOut; // поле вывода выбранного значения с ListView
 
     // массив данных животных кайнозойского периода
-    private String[] arrayMesozoic = {"Аллозавр", "Велоцираптор", "Диплодок", "Стегозавр", "Цзяньчанозавр", "Ютараптор", "Мегалодон"};
+    private String[] arrayMesozoic = {"Зубр", "Красный волк", "Леопард", "Бобр", "Амурский тигр", "Мандаринка", "Манул"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mesozoic);
+        setContentView(R.layout.activity_animals);
 
         // присваивание id полям
         mesozoicList = findViewById(R.id.mesozoicList);

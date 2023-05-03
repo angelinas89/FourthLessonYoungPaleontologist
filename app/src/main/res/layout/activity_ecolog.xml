@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_paleontology"
+    android:background="@drawable/biolog"
     android:scaleType="fitXY"
-    tools:context=".PaleozoicActivity">
+    tools:context=".EcoActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:layout_marginTop="50dp"
-        android:text="Список животных палеозойского периода"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        android:textColor="#D6CFB0"
         android:background="@drawable/shape_text"
         android:gravity="center"
+        android:text="список фактов экологии"
+        android:textColor="#D6CFB0"
+        android:textSize="23sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +30,7 @@
         android:layout_marginTop="28dp"
         android:background="@drawable/shape_paleozoic"
         android:gravity="center"
-        android:hint="Окно ввода нового животного"
+        android:hint="окно вывода нового фактора"
         android:textColor="#3E3A29"
         android:textColorHint="#7A7352"
         android:textSize="21sp"
@@ -59,7 +59,7 @@
             android:backgroundTint="@null"
             android:background="@null"
             android:layout_marginEnd="50dp"
-            app:srcCompat="@drawable/btn_add" />
+            app:srcCompat="@drawable/img_7" />
         <ImageButton
             android:id="@+id/btnDelete"
             android:layout_width="80dp"
@@ -67,7 +67,7 @@
             android:scaleType="fitXY"
             android:backgroundTint="@null"
             android:background="@null"
-            app:srcCompat="@drawable/btn_delete" />
+            app:srcCompat="@drawable/img_8" />
     </LinearLayout>
 
     <ListView

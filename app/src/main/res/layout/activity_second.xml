@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_paleontology"
+    android:background="@drawable/biolog"
     android:scaleType="fitXY"
     tools:context=".SecondActivity">
 
@@ -14,12 +14,12 @@
       android:layout_width="350dp"
       android:layout_height="70dp"
       android:layout_marginTop="50dp"
-      android:text="Выберете период"
-      android:textSize="23sp"
-      android:textStyle="bold"
-      android:textColor="#D6CFB0"
       android:background="@drawable/shape_text"
       android:gravity="center"
+      android:text="Выберите раздел биологии"
+      android:textColor="#D6CFB0"
+      android:textSize="23sp"
+      android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
@@ -35,30 +35,30 @@
 
     <ImageButton
         android:id="@+id/imageButtonCenozoic"
-        android:layout_width="match_parent"
+        android:layout_width="337dp"
         android:layout_height="wrap_content"
-        android:paddingBottom="25dp"
-        app:srcCompat="@drawable/cenozoic"
+        android:background="@null"
         android:backgroundTint="@null"
-        android:background="@null"/>
+        android:paddingBottom="25dp"
+        app:srcCompat="@drawable/img_2" />
 
     <ImageButton
         android:id="@+id/imageButtonMesozoic"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="25dp"
-        app:srcCompat="@drawable/mesozoic"
+        android:layout_height="92dp"
+        android:background="@null"
         android:backgroundTint="@null"
-        android:background="@null"/>
+        android:paddingBottom="25dp"
+        app:srcCompat="@drawable/img_4" />
 
     <ImageButton
         android:id="@+id/imageButtonPaleozoic"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="25dp"
-        app:srcCompat="@drawable/paleozoic"
+        android:layout_height="108dp"
+        android:background="@null"
         android:backgroundTint="@null"
-        android:background="@null"/>
+        android:paddingBottom="25dp"
+        app:srcCompat="@drawable/img_6" />
   </LinearLayout>
 
 

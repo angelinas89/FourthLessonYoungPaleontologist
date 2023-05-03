@@ -9,12 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class PaleozoicActivity extends AppCompatActivity {
+public class EcoActivity extends AppCompatActivity {
 
     // задание полей
     private ListView paleozoicList; // поле вывода информации на экран
@@ -32,7 +31,7 @@ public class PaleozoicActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_paleozoic);
+        setContentView(R.layout.activity_ecolog);
 
         // присваивание id полям
         paleozoicList = findViewById(R.id.paleozoicList);
@@ -41,7 +40,7 @@ public class PaleozoicActivity extends AppCompatActivity {
         btnDelete = findViewById(R.id.btnDelete);
 
         // добавляем начальные элементы в коллекцию массива данных
-        Collections.addAll(animal, "Аномалокарис", "Виваксия", "Нектокарис", "Опабиния", "Камероцерас", "Тиктаалик", "Акантостега", "Капетус");
+        Collections.addAll(animal, "Чистый воздух", "Нет мусора", "Красивые леса", "Чистые водоемы" );
 
         // инициализация адаптера (текущий объект активити, стандартный шаблон разметки вывода информации для выбора значений, массив данных)
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_multiple_choice, animal);

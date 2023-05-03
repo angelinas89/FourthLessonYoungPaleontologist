@@ -13,21 +13,21 @@
         android:theme="@style/Theme.FourthLessonYoungPaleontologist"
         tools:targetApi="31">
         <activity
-            android:name=".PaleozoicActivity"
+            android:name=".EcoActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MesozoicActivity"
+            android:name=".ZoologActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".CenozoicActivity"
+            android:name=".BotanActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

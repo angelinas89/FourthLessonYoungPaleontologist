@@ -38,17 +38,17 @@ public class SecondActivity extends AppCompatActivity {
             // переключение на новую активность
             switch (view.getId()) {
                 case R.id.imageButtonCenozoic:
-                    Intent intentCenozoic = new Intent(getApplicationContext(), CenozoicActivity.class); // переключение на новую активность кайнозойского периода
+                    Intent intentCenozoic = new Intent(getApplicationContext(), BotanActivity.class); // переключение на новую активность кайнозойского периода
                     intentCenozoic.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT); // использование флага перемещения нужной активности на вершину стека
                     startActivity(intentCenozoic);
                     break;
                 case R.id.imageButtonMesozoic:
-                    Intent intentMesozoic = new Intent(getApplicationContext(), MesozoicActivity.class); // переключение на новую активность мезозойского периода
+                    Intent intentMesozoic = new Intent(getApplicationContext(), ZoologActivity.class); // переключение на новую активность мезозойского периода
                     intentMesozoic.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // использование флага уничтожения всех активности кроме той которая требуется
                     startActivity(intentMesozoic);
                     break;
                 case R.id.imageButtonPaleozoic:
-                    Intent intentPaleozoic = new Intent(getApplicationContext(), PaleozoicActivity.class); // переключение на новую активность палеозойского периода
+                    Intent intentPaleozoic = new Intent(getApplicationContext(), EcoActivity.class); // переключение на новую активность палеозойского периода
                     intentPaleozoic.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP); // использование флага перехода к нужной активности
                     // без перемещения данной активности в стеке
                     startActivity(intentPaleozoic);

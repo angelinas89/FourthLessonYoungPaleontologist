@@ -6,18 +6,18 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class CenozoicActivity extends AppCompatActivity {
+public class BotanActivity extends AppCompatActivity {
 
     // задание полей
     private ListView cenozoicList; // поле вывода информации на экран
 
     // массив данных животных кайнозойского периода
-    private String[] arrayCenozoic = {"Глиптодон", "Астрапотерии", "Цератогаулюс", "Сумчатый лев", "Палеопарадоксия", "Дорудон", "Индрикотерий", "Мегатерий"};
+    private String[] arrayCenozoic = {"Мхи", "Голосеменные", "Хвойные", "Однодольные", "Двудольные", "Цветковые", "Семенные"  };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cenozoic);
+        setContentView(R.layout.activity_botanic);
 
         // присваивание id полям
         cenozoicList = findViewById(R.id.cenozoicList);
